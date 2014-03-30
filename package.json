@@ -1,0 +1,16 @@
+{
+  "name": "color-svg",
+  "version": "0.1.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "~3.6.0",
+    "gulp-less": "~1.2.3",
+    "gulp-uglify": "~0.2.1",
+    "gulp-clean": "~0.2.4",
+    "gulp-rename": "~1.2.0",
+    "gulp-concat": "~2.2.0"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>ColorSVG</title>
+
+  <link href="dist/css/color-svg.css" media="screen" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    .color-picker-wrapper {
+      top: 48%;
+      left: 48%;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="color-picker-wrapper">
+    <input type="text" class="color-picker" value="" />
+  </div>
+
+  <script src="dist/js/vendor/dependencies.min.js"></script>
+  <script src="dist/js/color-svg.js"></script>
+  <script>
+    $(window).load(function() {
+      ColorSVG.init();
+    });
+  </script>
+</body>
+</html>

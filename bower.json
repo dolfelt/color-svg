@@ -1,0 +1,29 @@
+{
+  "name": "color-svg",
+  "version": "0.1.0",
+  "authors": [
+    "Daniel Olfelt <daniel@thisclicks.com>"
+  ],
+  "description": "A new, modern color picker library, using only 100% SVG graphics.",
+  "main": [
+    "dist/js/color-svg.min.js",
+    "dist/css/color-svg.css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "*.md",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "jquery": ">= 2.0.0",
+    "Snap.svg": ">= 0.2.0"
+  },
+  "keywords": [
+    "color",
+    "picker",
+    "svg",
+    "javascript",
+    "library"
+  ]
+}

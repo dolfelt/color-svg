@@ -1,0 +1,14 @@
+.color-svg-picker svg {
+  position: relative;
+  z-index: 10;
+}
+.color-svg-picker svg path[data-id] {
+  cursor: pointer;
+}
+.color-svg-picker svg circle.icon {
+  fill: #000;
+  opacity: 0.6;
+}
+.color-svg-picker svg path.pencil {
+  fill: white;
+}
