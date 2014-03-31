@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="45 45 70 70">
+	<g data-id="g1">
+		<path stroke="white" stroke-width="0" d="M71.75042088615695,71.75042088615695 A11.666666666666666,11.666666666666666,0,0,1,80,68.33333333333333 L80,75 A5,5,0,0,0,76.46446609406726,76.46446609406726 z" fill="#ba5cb2" data-cx="80" data-cy="80" data-id="s17" transform="matrix(3,0,0,3,-160,-160)" style="stroke-width: 0px;"></path>
+		<path stroke="white" stroke-width="0" d="M88.24957911384305,88.24957911384305 A11.666666666666666,11.666666666666666,0,0,1,80,91.66666666666667 L80,85 A5,5,0,0,0,83.53553390593274,83.53553390593274 z" fill="#baff4d" data-cx="80" data-cy="80" data-id="s13" transform="matrix(3,0,0,3,-160,-160)" style="stroke-width: 0px;"></path>
+		<path stroke="white" stroke-width="0" d="M91.66666666666667,80 A11.666666666666666,11.666666666666666,0,0,1,88.24957911384305,88.24957911384305 L83.53553390593274,83.53553390593274 A5,5,0,0,0,85,80 z" fill="#ffff4d" data-cx="80" data-cy="80" data-id="s12" transform="matrix(3,0,0,3,-160,-160)" style="stroke-width: 0px;"></path>
+		<path stroke="white" stroke-width="0" d="M88.24957911384305,71.75042088615695 A11.666666666666666,11.666666666666666,0,0,1,91.66666666666667,80 L85,80 A5,5,0,0,0,83.53553390593274,76.46446609406726 z" fill="#ffb84d" data-cx="80" data-cy="80" data-id="s11" transform="matrix(3,0,0,3,-160,-160)" style="stroke-width: 0px;"></path>
+		<path stroke="white" stroke-width="0" d="M80,68.33333333333333 A11.666666666666666,11.666666666666666,0,0,1,88.24957911384305,71.75042088615695 L83.53553390593274,76.46446609406726 A5,5,0,0,0,80,75 z" fill="#ff5c4d" data-cx="80" data-cy="80" data-id="s10" transform="matrix(3,0,0,3,-160,-160)" style="stroke-width: 0px;"></path>
+		<path stroke="white" stroke-width="0" d="M80,91.66666666666667 A11.666666666666666,11.666666666666666,0,0,1,71.75042088615695,88.24957911384305 L76.46446609406726,83.53553390593274 A5,5,0,0,0,80,85 z" fill="#61b8b2" data-cx="80" data-cy="80" data-id="s14" transform="matrix(3,0,0,3,-160,-160)" style="stroke-width: 0px;"></path>
+		<path stroke="white" stroke-width="0" d="M71.75042088615695,88.24957911384305 A11.666666666666666,11.666666666666666,0,0,1,68.33333333333333,80 L75,80 A5,5,0,0,0,76.46446609406726,83.53553390593274 z" fill="#615cff" data-cx="80" data-cy="80" data-id="s15" transform="matrix(3,0,0,3,-160,-160)" style="stroke-width: 0px;"></path>
+		<path stroke="white" stroke-width="0" d="M68.33333333333333,80 A11.666666666666666,11.666666666666666,0,0,1,71.75042088615695,71.75042088615695 L76.46446609406726,76.46446609406726 A5,5,0,0,0,75,80 z" fill="#9e79df" data-cx="80" data-cy="80" data-id="s16" transform="matrix(3,0,0,3,-160,-160)" style="stroke-width: 0px;"></path>
+	</g>
+	<g data-id="g0">
+		<path stroke="white" stroke-width="0" d="M80,60 A20,20,0,0,1,94.14213562373095,65.85786437626905 L80,80 A0,0,0,0,0,80,80 z" fill="#ff5c4d" data-cx="80" data-cy="80" data-id="s00" transform="matrix(0.75,0,0,0.75,20,20)"></path>
+		<path stroke="white" stroke-width="0" d="M94.14213562373095,65.85786437626905 A20,20,0,0,1,100,80 L80,80 A0,0,0,0,0,80,80 z" fill="#ffb84d" data-cx="80" data-cy="80" data-id="s01" transform="matrix(0.75,0,0,0.75,20,20)"></path>
+		<path stroke="white" stroke-width="0" d="M100,80 A20,20,0,0,1,94.14213562373095,94.14213562373095 L80,80 A0,0,0,0,0,80,80 z" fill="#ffff4d" data-cx="80" data-cy="80" data-id="s02" transform="matrix(0.75,0,0,0.75,20,20)"></path>
+		<path stroke="white" stroke-width="0" d="M94.14213562373095,94.14213562373095 A20,20,0,0,1,80,100 L80,80 A0,0,0,0,0,80,80 z" fill="#baff4d" data-cx="80" data-cy="80" data-id="s03" transform="matrix(0.75,0,0,0.75,20,20)"></path>
+		<path stroke="white" stroke-width="0" d="M80,100 A20,20,0,0,1,65.85786437626905,94.14213562373095 L80,80 A0,0,0,0,0,80,80 z" fill="#61b8b2" data-cx="80" data-cy="80" data-id="s04" transform="matrix(0.75,0,0,0.75,20,20)"></path>
+		<path stroke="white" stroke-width="0" d="M65.85786437626905,94.14213562373095 A20,20,0,0,1,60,80 L80,80 A0,0,0,0,0,80,80 z" fill="#615cff" data-cx="80" data-cy="80" data-id="s05" transform="matrix(0.75,0,0,0.75,20,20)"></path>
+		<path stroke="white" stroke-width="0" d="M60,80 A20,20,0,0,1,65.85786437626905,65.85786437626905 L80,80 A0,0,0,0,0,80,80 z" fill="#9e79df" data-cx="80" data-cy="80" data-id="s06" transform="matrix(0.75,0,0,0.75,20,20)"></path>
+		<path stroke="white" stroke-width="0" d="M65.85786437626905,65.85786437626905 A20,20,0,0,1,80,60 L80,80 A0,0,0,0,0,80,80 z" fill="#ba5cb2" data-cx="80" data-cy="80" data-id="s07" transform="matrix(0.75,0,0,0.75,20,20)"></path>
+	</g>
+	<circle cx="80" cy="80" r="15" class="icon" opacity="0.6"></circle>
+	<g transform="translate(73 73)">
+		<path d="M3.4,12.8L4.2,12L2,9.8l-0.8,0.8v1h1.2v1.2H3.4z M8.2,4.2C8.2,4.1,8.1,4,8,4c-0.1,0-0.1,0-0.2,0.1l-5,5c0,0-0.1,0.1-0.1,0.2c0,0.1,0.1,0.2,0.2,0.2c0.1,0,0.1,0,0.2-0.1l5-5C8.2,4.4,8.2,4.3,8.2,4.2z M7.7,2.5l3.8,3.8L3.8,14H0v-3.8 L7.7,2.5z M14,3.4c0,0.3-0.1,0.6-0.3,0.8l-1.5,1.5L8.3,1.9l1.5-1.5C10,0.1,10.3,0,10.6,0c0.3,0,0.6,0.1,0.8,0.4l2.2,2.2 C13.9,2.8,14,3,14,3.4z" class="pencil" fill="white"></path>
+	</g>
+</svg>
