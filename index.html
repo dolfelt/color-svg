@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link href="https://rawgithub.com/dolfelt/color-svg/master/dist/css/color-svg.css" media="screen" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,11 +32,16 @@
         <h2>
 <a name="colorsvg" class="anchor" href="#colorsvg"><span class="octicon octicon-link"></span></a>ColorSVG</h2>
 
+<p><img src="wheel.svg" style="width: 100%" /></p>
+
 <p>ColorSVG is a new way to allow your users to select color. It hails from the age old tradition of color wheels, but
 gives an exciting new twist using 100% SVG graphics. If focuses on easily providing a rich set of colors for your
 users to easily select, which allows you to get back to business.</p>
 
-<p><img src="wheel.svg" style="width: 100%" /></p>
+<a name="demo"></a>
+<h3>Demo</h3>
+
+<p><input type="text" class="color-picker" /></p>
 
 <h3>
 <a name="implementation" class="anchor" href="#implementation"><span class="octicon octicon-link"></span></a>Implementation</h3>
@@ -48,7 +54,7 @@ it will be read automatically by ColorSVG. When a new color is selected, it will
 
 <p>It's really that simple. You can initialize the picker(s) using a jQuery object or selector string.</p>
 
-<pre><code>ColorSVG.init('.color-picker')
+<pre><code>ColorSVG.init('.color-picker');
 </code></pre>
 
 <p>OR</p>
@@ -79,6 +85,10 @@ gulp
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+    <script src="https://rawgithub.com/dolfelt/color-svg/master/dist/js/vendor/dependencies.min.js"></script>
+    <script src="https://rawgithub.com/dolfelt/color-svg/master/dist/js/color-svg.js"></script>
+    <script type="text/javascript">
+      ColorSVG.init('.color-picker');
+    </script>
   </body>
 </html>
