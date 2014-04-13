@@ -241,7 +241,7 @@ var ColorSVG = {
             pinner = this.svg_obj('path');
         this.set_attr(pencil, {
             'transform': "translate("+[cx-7,cy-7].join(' ')+")"
-        })
+        });
         this.set_attr(pinner, {
             'd': "M3.4,12.8L4.2,12L2,9.8l-0.8,0.8v1h1.2v1.2H3.4z M8.2,4.2C8.2,4.1,8.1,4,8,4c-0.1,0-0.1,0-0.2,0.1l-5,5c0,0-0.1,0.1-0.1,0.2c0,0.1,0.1,0.2,0.2,0.2c0.1,0,0.1,0,0.2-0.1l5-5C8.2,4.4,8.2,4.3,8.2,4.2z M7.7,2.5l3.8,3.8L3.8,14H0v-3.8 L7.7,2.5z M14,3.4c0,0.3-0.1,0.6-0.3,0.8l-1.5,1.5L8.3,1.9l1.5-1.5C10,0.1,10.3,0,10.6,0c0.3,0,0.6,0.1,0.8,0.4l2.2,2.2 C13.9,2.8,14,3,14,3.4z",
             'class': "pencil"
@@ -277,7 +277,7 @@ var ColorSVG = {
             var path = Snap(e.target);
 
             // Move to the front
-            path.parent().append(path);
+            path.appendTo(path.parent());
 
             path.attr({
                 strokeWidth: 1/base_scale
@@ -449,61 +449,77 @@ var ColorSVG = {
         ],
         // First Row of Colors
         [
-            'ff5c4d',
-            'ffb84d',
-            'ffff4d',
-            'baff4d',
-            '61b8b2',
-            '615cff',
-            '9e79df',
-            'ba5cb2'
+            'c81717',
+            'f45f21',
+            'ffd800',
+            '00952a',
+            '00b19a',
+            '174aa7',
+            '6954c4',
+            'b03faa'
         ],
         // Second Row of Colors
         [
-            'd98db3',
-            'd98dd9',
-            'b38dd9',
-            '9a8dd9',
-            '8da6d9',
-            '8dbfd9',
-            '8dd9cc',
-            'a6d98d',
-            'bfd98d',
-            'd9d98d',
-            'd9bf8d',
-            'd9a68d',
-            'd98d8d',
-            'cc5490',
-            'cc54cc',
-            '9054cc'
+            '982424',
+            'f13434',
+            'ff9264',
+            'ba4717',
+            'cdae00',
+            'ffeb7d',
+            '00cc39',
+            '006e1f',
+            '008574',
+            '1df3d7',
+            '3576ec',
+            '234075',
+            '4a3b8c',
+            '9981ff',
+            'ec59e4',
+            '812c7c'
         ],
 
         // Outer Row of Colors
         [
-            '6854cc',
-            '547ccc',
-            '54a4cc',
-            '54ccb8',
-            '54cc54',
-            'a4cc54',
-            'cccc54',
-            'cca454',
-            'cc7c54',
-            'cc5353',
-            'a6115b',
-            'a611a6',
-            '7411a6',
-            '4211a6',
-            '1142a6',
-            '1174a6',
-            '11a68d',
-            '42a611',
-            '74a611',
-            'a6a611',
-            'a67411',
-            'a64211',
-            'a61111',
-            '8a485e'
+            // Red
+            '7a0e2d',
+            '9c2b41',
+            'd25b73',
+            'fe6080',
+            // Orange
+            'fe943e',
+            'cd6612',
+            '95490c',
+            '6c3101',
+            // Yellow
+            'a17900',
+            'd19d00',
+            'ffc000',
+            'd3c162',
+            // Green
+            'bcff76',
+            '88ec1f',
+            '279a52',
+            '326100',
+            // Teal
+            '104e46',
+            '4b877f',
+            '6fbbb1',
+            'a6eae1',
+            // Blue
+            '35aeec',
+            '2491b0',
+            '0d647d',
+            '004255',
+            // Purple
+            '330e71',
+            '5400a3',
+            '8300ff',
+            'b76aff',
+            // Pink
+            'e12bec',
+            'a10faa',
+            '730a7a',
+            '4b0050'
         ]
 
     ]

@@ -15,7 +15,7 @@ var paths = {
 
 // Clean the build directory
 gulp.task('clean', function() {
-    gulp.src('dist/**/*', {read: false})
+    return gulp.src('dist/**/*', {read: false})
         .pipe(clean());
 });
 
