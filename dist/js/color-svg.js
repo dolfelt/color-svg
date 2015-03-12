@@ -117,7 +117,7 @@ var ColorSVG = {
             var group = groups[g],
                 id = parseInt(group.getAttribute('data-id').replace("g",""), 10),
                 scale = close_callback ? 1 : id + 2,
-                do_callback = g == 0,
+                do_callback = g == (groups.length - 1),
                 animation = settings.animation_type,
                 speed = settings.animation_speed * (g+1);
 
@@ -129,16 +129,9 @@ var ColorSVG = {
                 animation = 'easein';
                 speed = settings.animation_speed * 1.5;
             }
-
-            var paths = $('path', group);
-            for (var p = 0; p < paths.length; p++) {
-                var path = Snap(paths[p]),
-                    last = p == 0 && do_callback;
-
-                path.stop().animate({
-                    transform: 's' + scale + ' ' + scale + ' ' + cx + ' ' + cy
-                }, speed, mina[animation], last ? close_callback || null : null);
-            }
+            Snap(group).stop().animate({
+                transform: 's' + scale + ' ' + scale + ' ' + cx + ' ' + cy
+            }, speed, mina[animation], do_callback ? close_callback || null : null);
         }
 
         var circle = $('.selected-color', svg)[0],
@@ -214,7 +207,7 @@ var ColorSVG = {
 
                 if (level) {
                     var el = Snap(path);
-                    this.animate(el, cx, cy, settings, level);
+                    this.animateAnnularSector(el, cx, cy, settings, level);
                     this.action(el, input, settings);
                 }
 
@@ -268,21 +261,21 @@ var ColorSVG = {
             self.close(input, settings);
         });
     },
-    animate : function (el, cx, cy, settings, level) {
+    animateAnnularSector : function (el, cx, cy, settings, level) {
         var self = this,
-            base_scale = level+ 2,
-            scale = base_scale + (0.2);
+            base_scale = 1,
+            scale = base_scale + (0.05);
 
         el.hover(function (e) {
-            var path = Snap(e.target);
+            var path = Snap(e.target)
 
             // Move to the front
             path.appendTo(path.parent());
 
             path.attr({
-                strokeWidth: 1/base_scale
+                strokeWidth: 1/(level+2)
             });
-            path.animate({
+            path.stop().animate({
                 transform: 's' + scale + ' ' + scale + ' ' + cx + ' ' + cy
             }, settings.animation_speed, mina[settings.animation_type]);
 
@@ -292,7 +285,7 @@ var ColorSVG = {
             path.attr({
                 strokeWidth: 0
             });
-            path.animate({
+            path.stop().animate({
                 transform: 's' + base_scale + ' ' + base_scale + ' ' + cx + ' ' + cy
             }, settings.animation_speed, mina[settings.animation_type]);
         });
