@@ -23,14 +23,14 @@ ColorSVG.init($('.color-picker', scope));
 
 ### Options
 
-Coming soon...
+Coming (not so) soon...
 
 
 ### Contributing
 
 To contribute you must have Node and Gulp installed on your system.
 
-Compiling:
+**Compiling:**
 
 ```
 npm install

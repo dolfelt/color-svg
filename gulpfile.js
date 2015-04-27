@@ -2,9 +2,10 @@
 var gulp = require('gulp'),
     less = require('gulp-less'),
     uglify = require('gulp-uglify'),
-    clean = require('gulp-clean'),
+    del = require('del'),
     rename = require('gulp-rename'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    sourcemaps = require('gulp-sourcemaps');
 
 // Paths
 var paths = {
@@ -14,18 +15,18 @@ var paths = {
 };
 
 // Clean the build directory
-gulp.task('clean', function() {
-    return gulp.src('dist/**/*', {read: false})
-        .pipe(clean());
+gulp.task('clean', function(cb) {
+    del(['dist/**/*'], cb);
 });
 
 gulp.task('scripts', function() {
     // Minify and copy all JavaScript (except vendor scripts)
     return gulp.src(paths.scripts)
-        //.pipe(concat('color-svg.js'))
         .pipe(gulp.dest('dist/js'))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(uglify({outSourceMap: true}))
+        .pipe(sourcemaps.init())
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/js'));
 });
 

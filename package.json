@@ -4,13 +4,18 @@
   "description": "",
   "main": "gulpfile.js",
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dolfelt/color-svg.git"
+  },
   "devDependencies": {
-    "gulp": "~3.6.0",
-    "gulp-less": "~1.2.3",
-    "gulp-uglify": "~0.2.1",
-    "gulp-clean": "~0.2.4",
+    "del": "^1.1.1",
+    "gulp": "~3.8.0",
+    "gulp-concat": "~2.5.0",
+    "gulp-less": "~3.0.3",
     "gulp-rename": "~1.2.0",
-    "gulp-concat": "~2.2.0"
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "~1.2.0"
   }
 }
