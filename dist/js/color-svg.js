@@ -130,15 +130,9 @@ var ColorSVG = {
                 speed = settings.animation_speed * 1.5;
             }
 
-            var paths = $('path', group);
-            for (var p = 0; p < paths.length; p++) {
-                var path = Snap(paths[p]),
-                    last = p == 0 && do_callback;
-
-                path.stop().animate({
-                    transform: 's' + scale + ' ' + scale + ' ' + cx + ' ' + cy
-                }, speed, mina[animation], last ? close_callback || null : null);
-            }
+            Snap(group).stop().animate({
+              transform: 's' + scale + ' ' + scale + ' ' + cx + ' ' + cy
+            }, speed, mina[animation], do_callback ? close_callback || null : null);
         }
 
         var circle = $('.selected-color', svg)[0],
@@ -270,8 +264,8 @@ var ColorSVG = {
     },
     animate : function (el, cx, cy, settings, level) {
         var self = this,
-            base_scale = level+ 2,
-            scale = base_scale + (0.2);
+            base_scale = 1,
+            scale = base_scale + 0.05;
 
         el.hover(function (e) {
             var path = Snap(e.target);
@@ -280,9 +274,9 @@ var ColorSVG = {
             path.appendTo(path.parent());
 
             path.attr({
-                strokeWidth: 1/base_scale
+                strokeWidth: 1/(level+ 2)
             });
-            path.animate({
+            path.stop().animate({
                 transform: 's' + scale + ' ' + scale + ' ' + cx + ' ' + cy
             }, settings.animation_speed, mina[settings.animation_type]);
 
@@ -292,7 +286,7 @@ var ColorSVG = {
             path.attr({
                 strokeWidth: 0
             });
-            path.animate({
+            path.stop().animate({
                 transform: 's' + base_scale + ' ' + base_scale + ' ' + cx + ' ' + cy
             }, settings.animation_speed, mina[settings.animation_type]);
         });
