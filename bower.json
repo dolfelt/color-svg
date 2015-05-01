@@ -1,8 +1,8 @@
 {
   "name": "color-svg",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
-    "Daniel Olfelt <daniel@thisclicks.com>"
+    "Daniel Olfelt <dolfelt@gmail.com>"
   ],
   "description": "A new, modern color picker library, using only 100% SVG graphics.",
   "main": [
