@@ -51,6 +51,10 @@ var ColorSVG = {
 
         if (input.is(':input')) {
             input.val(color);
+
+            if (color) {
+                input.trigger('change');
+            }
         }
     },
 
