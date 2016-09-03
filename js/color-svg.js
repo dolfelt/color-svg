@@ -25,7 +25,7 @@ var ColorSVG = {
                 var input = $(this);
                 if (input.is(':input')) {
                     input.attr('type','hidden')
-                         .data('options', {color: input.val()});
+                        .data('options', {color: input.val()});
                 }
 
                 return self.build(input, options);
@@ -52,6 +52,39 @@ var ColorSVG = {
         if (input.is(':input')) {
             input.val(color);
         }
+    },
+
+    rgbToHex : function rgbToHex(color) {
+
+        if (color.charAt(0) === "#") {
+            return color;
+        }
+
+        var nums = /(.*?)rgb\((\d+),\s*(\d+),\s*(\d+)\)/i.exec(color),
+            r = parseInt(nums[2], 10).toString(16),
+            g = parseInt(nums[3], 10).toString(16),
+            b = parseInt(nums[4], 10).toString(16);
+
+        return (
+            (r.length == 1 ? "0"+ r : r) +
+            (g.length == 1 ? "0"+ g : g) +
+            (b.length == 1 ? "0"+ b : b)
+        );
+
+    },
+
+    getColorCurrentHex : function() {
+
+        if (typeof current_color !== 'undefined')
+            return this.rgbToHex(current_color);
+        return false;
+
+    },
+
+    setColorCurrent : function(color) {
+
+        current_color = color;
+
     },
 
     build : function(input, options) {
@@ -131,7 +164,7 @@ var ColorSVG = {
             }
 
             Snap(group).stop().animate({
-              transform: 's' + scale + ' ' + scale + ' ' + cx + ' ' + cy
+                transform: 's' + scale + ' ' + scale + ' ' + cx + ' ' + cy
             }, speed, mina[animation], do_callback ? close_callback || null : null);
         }
 
@@ -246,6 +279,14 @@ var ColorSVG = {
         return [input, svg];
     },
 
+    eventHandler : function() {
+
+        if (typeof(this.settings.eventHandler)!=='undefined') {
+            this.settings.eventHandler();
+        }
+
+    },
+
     action : function (el, input, settings) {
         var self = this;
 
@@ -260,6 +301,9 @@ var ColorSVG = {
             self.setColor(input, color);
 
             self.close(input, settings);
+
+            // call event handler defined into settings, if defined (settings.eventHandler)
+            self.eventHandler();
         });
     },
     animate : function (el, cx, cy, settings, level) {
