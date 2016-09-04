@@ -473,91 +473,93 @@ var ColorSVG = {
         node.setAttribute('transform', 'translate(0, ' + h +') scale(1, -1)');
     },
 
+    // material design colors https://www.materialui.co/colors
+
     defaultColors: [
         // Inner circle (not selectable)
         [
-            'ff5c4d',
-            'ffb84d',
-            'ffff4d',
-            'baff4d',
-            '61b8b2',
-            '615cff',
-            '9e79df',
-            'ba5cb2'
+            'ef9a9a',//red
+            'FFCC80',//orange
+            'FFF59D',//yellow
+            'A5D6A7',//green
+            '80DEEA',//teal
+            '90CAF9',//blue
+            'CE93D8',//purple
+            'F48FB1'//pink
         ],
         // First Row of Colors
         [
-            'c81717',
-            'f45f21',
-            'ffd800',
-            '00952a',
-            '00b19a',
-            '174aa7',
-            '6954c4',
-            'b03faa'
+            'e57373',//red
+            'FFB74D',//orange
+            'FFF176',//yellow
+            '81C784',//green
+            '4DD0E1',//teal
+            '64B5F6',//blue
+            'BA68C8',//purple
+            'F06292'//pink
         ],
         // Second Row of Colors
         [
-            '982424',
-            'f13434',
-            'ff9264',
-            'ba4717',
-            'cdae00',
-            'ffeb7d',
-            '00cc39',
-            '006e1f',
-            '008574',
-            '1df3d7',
-            '3576ec',
-            '234075',
-            '4a3b8c',
-            '9981ff',
-            'ec59e4',
-            '812c7c'
+            'ef5350',//red
+            'f44336',
+            'FFA726',//orange
+            'FF9800',
+            'FFEE58',//yellow
+            'FFEB3B',
+            '66BB6A',//green
+            '4CAF50',
+            '26C6DA',//teal
+            '00BCD4',
+            '42A5F5',//blue
+            '2196F3',
+            'AB47BC',//purple
+            '9C27B0',
+            'EC407A',//pink
+            'E91E63'
         ],
 
         // Outer Row of Colors
         [
             // Red
-            '7a0e2d',
-            '9c2b41',
-            'd25b73',
-            'fe6080',
+            'e53935',
+            'd32f2f',
+            'c62828',
+            'b71c1c',
             // Orange
-            'fe943e',
-            'cd6612',
-            '95490c',
-            '6c3101',
+            'FB8C00',
+            'F57C00',
+            'EF6C00',
+            'E65100',
             // Yellow
-            'a17900',
-            'd19d00',
-            'ffc000',
-            'd3c162',
+            'FDD835',
+            'FBC02D',
+            'F9A825',
+            'F57F17',
             // Green
-            'bcff76',
-            '88ec1f',
-            '279a52',
-            '326100',
+            '43A047',
+            '388E3C',
+            '2E7D32',
+            '1B5E20',
             // Teal
-            '104e46',
-            '4b877f',
-            '6fbbb1',
-            'a6eae1',
+            '00ACC1',
+            '0097A7',
+            '00838F',
+            '006064',
             // Blue
-            '35aeec',
-            '2491b0',
-            '0d647d',
-            '004255',
+            '1E88E5',
+            '1976D2',
+            '1565C0',
+            '0D47A1',
             // Purple
-            '330e71',
-            '5400a3',
-            '8300ff',
-            'b76aff',
+            '8E24AA',
+            '7B1FA2',
+            '6A1B9A',
+            '4A148C',
             // Pink
-            'e12bec',
-            'a10faa',
-            '730a7a',
-            '4b0050'
+            'D81B60',
+            'C2185B',
+            'AD1457',
+            '880E4F'
         ]
 
     ]
