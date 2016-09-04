@@ -1,8 +1,8 @@
 ## ColorSVG
 
-ColorSVG is a new way to allow your users to select color. It hails from the age old tradition of color wheels, but
-gives an exciting new twist using 100% SVG graphics. If focuses on easily providing a rich set of colors for your
-users to easily select, which allows you to get back to business.
+ColorSVG is a new way to allow your users to select color. It hails from the age old tradition of color wheels, but gives an exciting new twist using 100% SVG graphics. If focuses on easily providing a rich set of colors for your users to easily select, which allows you to get back to business.
+
+![ColorWheel](doc/color_wheel.png "ColorWheel")
 
 ### Implementation
 
